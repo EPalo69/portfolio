@@ -36,87 +36,269 @@
   </header>
 
 <div class="project-container">
+
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="csharp">C#</button>
+    <button class="filter-btn" data-filter="python">Python</button>
+    <button class="filter-btn" data-filter="typescript">TypeScript</button>
+    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+    <button class="filter-btn" data-filter="php">PHP</button>
+    <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="desktop">Desktop</button>
+  </div>
+
   <div class="project-grid">
-    
-    <a href="https://github.com/Shevannnn/CSS-art" class="project-card" target="_blank" rel="noopener noreferrer">
+
+
+    <a class="project-card"
+       data-repo="aurora-commit-ai"
+       data-tags="python typescript ai-ml vscode-extension ollama"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img src="Images/default.jpg" alt="Project Image" class="project-card-image">
+      <div class="project-card-content">
+        <h3 class="project-card-title">Aurora Auto Commit Message Generator</h3>
+        <p class="project-card-description">
+          A VS Code extension that uses local AI models to analyze Git changes and 
+          automatically generate commit messages.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">AI/ML</span>
+          <span class="project-tag">Ollama</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="project-card"
+       data-repo="sedan-suv-image-classifier"
+       data-tags="python tensorflow computer-vision ai-ml image-classification"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img src="Images/default.jpg" alt="Project Image" class="project-card-image">
+      <div class="project-card-content">
+        <h3 class="project-card-title">Sedan vs SUV Image Classifier</h3>
+        <p class="project-card-description">
+          An image classification system that uses a trained deep learning model
+          to distinguish between sedans and SUVs from images.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">TensorFlow</span>
+          <span class="project-tag">Computer Vision</span>
+          <span class="project-tag">AI/ML</span>
+          <span class="project-tag">Image Classification</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="project-card"
+       data-repo="web-content-management-system"
+       data-tags="php laravel javascript web tailwind"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img src="Images/default.jpg" alt="Project Image" class="project-card-image">
+      <div class="project-card-content">
+        <h3 class="project-card-title">Web Content Management System</h3>
+        <p class="project-card-description">
+          A web-based content management system for creating, managing, and organizing
+          website content through an admin interface.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">Laravel</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Web</span>
+          <span class="project-tag">Tailwind CSS</span>
+        </div>
+      </div>
+    </a>
+
+
+    <a class="project-card"
+       data-repo="kinect-yoga-assisstant"
+       data-tags="csharp wpf kinect computer-vision"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img src="Images/default.jpg" alt="Project Image" class="project-card-image">
+      <div class="project-card-content">
+        <h3 class="project-card-title">YAMAS: Yoga Aligntment and Movement Assistance System using Kinect Sensor</h3>
+        <p class="project-card-description">
+          A desktop application that uses the Kinect Sensor to analyze yoga movements
+          and provide real-time feedback.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">WPF</span>
+          <span class="project-tag">Kinect</span>
+          <span class="project-tag">Computer Vision</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="project-card"
+       data-repo="CSS-art"
+       data-tags="html-css web"
+       target="_blank"
+       rel="noopener noreferrer">
       <img src="Images/css-art.png" alt="Project Image" class="project-card-image">
       <div class="project-card-content">
         <h3 class="project-card-title">CSS Art</h3>
         <p class="project-card-description">
-          A fun CSS art project that recreates Pikachu using only basic shapes like squares and triangles. Built with HTML and CSS.
+          A fun CSS art project that recreates Pikachu using only basic shapes like
+          squares and triangles. Built with HTML and CSS.
         </p>
+        <div class="project-tags">
+          <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">Web</span>
+        </div>
       </div>
     </a>
-    
-    <a href="https://github.com/Shevannnn/movie-review-site" class="project-card" target="_blank" rel="noopener noreferrer">
+
+    <a class="project-card"
+       data-repo="movie-review-site"
+       data-tags="javascript html-css web"
+       target="_blank"
+       rel="noopener noreferrer">
       <img src="Images/movie-review-site.png" alt="Project Image" class="project-card-image">
       <div class="project-card-content">
         <h3 class="project-card-title">Basic Movie Review Site</h3>
         <p class="project-card-description">
-          A simple movie review site with smooth jQuery animations. Built using HTML, CSS, and jQuery.        </p>
+          A simple movie review site with smooth jQuery animations. Built using
+          HTML, CSS, and jQuery.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">Web</span>
+        </div>
       </div>
     </a>
-  
-    <a href="https://github.com/Shevannnn/8bit-game" class="project-card" target="_blank" rel="noopener noreferrer">
+
+    <a class="project-card"
+       data-repo="8bit-game"
+       data-tags="csharp wpf desktop game"
+       target="_blank"
+       rel="noopener noreferrer">
       <img src="Images/8bit-game.png" alt="Project Image" class="project-card-image">
       <div class="project-card-content">
         <h3 class="project-card-title">8 Bit Game</h3>
         <p class="project-card-description">
-          A WPF application that converts integers into 8-bit binary values, designed as a fun interactive game. Built with C# and WPF.        </p>
+          A WPF application that converts integers into 8-bit binary values,
+          designed as a fun interactive game. Built with C# and WPF.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">WPF</span>
+          <span class="project-tag">Desktop</span>
+          <span class="project-tag">Game</span>
+        </div>
       </div>
     </a>
-  
-    <a href="https://github.com/Shevannnn/patient-record-management-sys" class="project-card" target="_blank" rel="noopener noreferrer">
+
+    <a class="project-card"
+       data-repo="patient-record-management-sys"
+       data-tags="csharp wpf desktop tool"
+       target="_blank"
+       rel="noopener noreferrer">
       <img src="Images/prms.png" alt="Project Image" class="project-card-image">
       <div class="project-card-content">
         <h3 class="project-card-title">Patient Record Management System</h3>
         <p class="project-card-description">
-          A basic WPF application for managing patient records. Built with C# and WPF.        </p>
+          A basic WPF application for managing patient records. Built with C# and WPF.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">WPF</span>
+          <span class="project-tag">Desktop</span>
+          <span class="project-tag">Tool</span>
+        </div>
       </div>
     </a>
 
-    <a href="https://github.com/Shevannnn/pet-shop-pos" class="project-card" target="_blank" rel="noopener noreferrer">
+    <a class="project-card"
+       data-repo="pet-shop-pos"
+       data-tags="csharp wpf desktop tool"
+       target="_blank"
+       rel="noopener noreferrer">
       <img src="Images/pet-shop-pos.png" alt="Project Image" class="project-card-image">
       <div class="project-card-content">
         <h3 class="project-card-title">Pet Shop POS</h3>
         <p class="project-card-description">
           A WPF-based point-of-sale system designed for pet shops. Built with C#.
         </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">WPF</span>
+          <span class="project-tag">Desktop</span>
+          <span class="project-tag">Tool</span>
+        </div>
       </div>
     </a>
-    
-    <a href="https://github.com/Shevannnn/cipher-encrypt-decrypt" class="project-card" target="_blank" rel="noopener noreferrer">
-      <img src="Images/cipher.png" alt="Project Image" class="project-card-image">
-      <div class="project-card-content">
-        <h3 class="project-card-title">Simple Cipher Encrypt/Decrypt</h3>
-        <p class="project-card-description">
-          A console-based encryption and decryption tool that supports basic cipher algorithms for secure text conversion. Built with C#.        </p>
-      </div>
-    </a>
-  
-    <a href="https://github.com/Shevannnn/number-converter" class="project-card" target="_blank" rel="noopener noreferrer">
-      <img src="Images/num-convert.png" alt="Project Image" class="project-card-image">
-      <div class="project-card-content">
-        <h3 class="project-card-title">Number Converter</h3>
-        <p class="project-card-description">
-          A console application that converts numbers into Binary, Octal, and Hexadecimal formats. Built with C#.        </p>
-      </div>
-    </a>
-  
-    <a href="https://github.com/Shevannnn/blackjack" class="project-card" target="_blank" rel="noopener noreferrer">
+
+    <a class="project-card"
+       data-repo="blackjack"
+       data-tags="csharp game"
+       target="_blank"
+       rel="noopener noreferrer">
       <img src="Images/blackjack.png" alt="Project Image" class="project-card-image">
       <div class="project-card-content">
         <h3 class="project-card-title">Blackjack Game</h3>
         <p class="project-card-description">
-          A simple text-based Blackjack game featuring basic game mechanics like hitting, standing, and dealer AI. Built with C#.        </p>
+          A simple text-based Blackjack game featuring basic game mechanics like
+          hitting, standing, and dealer AI. Built with C#.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">Game</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="project-card"
+       data-repo="cipher-encrypt-decrypt"
+       data-tags="csharp tool"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img src="Images/cipher.png" alt="Project Image" class="project-card-image">
+      <div class="project-card-content">
+        <h3 class="project-card-title">Simple Cipher Encrypt/Decrypt</h3>
+        <p class="project-card-description">
+          A console-based encryption and decryption tool that supports basic cipher
+          algorithms for secure text conversion. Built with C#.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">Tool</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="project-card"
+       data-repo="number-converter"
+       data-tags="csharp tool"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img src="Images/num-convert.png" alt="Project Image" class="project-card-image">
+      <div class="project-card-content">
+        <h3 class="project-card-title">Number Converter</h3>
+        <p class="project-card-description">
+          A console application that converts numbers into Binary, Octal, and
+          Hexadecimal formats. Built with C#.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">Tool</span>
+        </div>
       </div>
     </a>
 
   </div>
 
 </div>
-
-
 
     <script src="Portfolio.js"></script>
   </body>

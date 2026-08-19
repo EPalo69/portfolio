@@ -1,4 +1,13 @@
-$(document).ready(function() {
+    $(document).ready(function() {
+
+  const CONFIG = {
+    githubRoot: "https://github.com/EPalo69/"
+  };
+
+  document.querySelectorAll(".project-card[data-repo]").forEach(card => {
+    card.href = CONFIG.githubRoot + card.dataset.repo;
+  });
+
   $(".home-container, .project-container, .profile-page, .contact-container")
   .css("display", "none")
   .fadeIn(200);
@@ -54,6 +63,22 @@ $(document).ready(function() {
       $(".mobile-menu").slideToggle(200);
       $(this).toggleClass("open");
     });
+
+  $(document).on('click', '.filter-btn', function () {
+    const filter = $(this).data('filter');
+
+    $('.filter-btn').removeClass('active');
+    $(this).addClass('active');
+
+    $('.project-card').each(function () {
+      const tags = $(this).data('tags') || '';
+      if (filter === 'all' || tags.split(' ').includes(filter)) {
+        $(this).removeClass('hidden');
+      } else {
+        $(this).addClass('hidden');
+      }
+    });
+  });
 
 });
 
